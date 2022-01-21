@@ -1,0 +1,7 @@
+1. Initially index.html webpage shows the avalable items with images and their prices.
+
+2. Created a cart.ts file and converted to js using the command tsc cart.ts
+
+3. Each item have add button to store item into the cart.
+
+4. Now click on checkout button, it will show total price of your selected items.

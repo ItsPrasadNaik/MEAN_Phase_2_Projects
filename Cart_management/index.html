@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Management</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src = "cart.js"></script>
+</head>
+
+<body style="background-color: aqua;" onload=updateCart() >
+    <div class="section" style="color: blue;">
+        <h1 class="title" style="text-align: center;">Cart Management</h1>
+    </div>
+
+    <div class="section is-flex is-justify-content-space-between">
+        <h1 class="subtitle "><b>Items in cart: <span id="size"></span></b></h1>
+        <a href="cart.html" class="button is-normal "><b>Checkout</b></a></div>
+    </div>
+
+    <div class="section is-flex is-justify-content-space-between" id="products">
+        <div class="card">
+            <div class="card-content is-center">
+              <div class="content is-center">
+                <img src="https://rukminim1.flixcart.com/image/492/590/kmds4nk0/shoe/m/l/e/5-g-40777cma-39-woodland-camel-original-imagfarq2fqzmgyz.jpeg?q=50" alt="">
+                Woodland Shoe
+                <br>
+                Price: Rs 2000
+              </div>
+            </div>
+            <footer class="card-content">
+              <button class="button is-normal" onClick=addrealme()>Add</button>
+            </footer>
+          </div>
+
+          <div class="card">
+            <div class="card-content is-center">
+              <div class="content is-center">
+                <img src="https://rukminim1.flixcart.com/image/492/590/ksyz8280/shirt/r/p/o/m-19573-0133-levi-s-original-imag6ff6v6cxc2hj.jpeg?q=50" alt="">
+                Levis Shirt
+                <br>
+                Price: Rs 1200
+              </div>
+            </div>
+            <footer class="card-content">
+              <button class="button is-normal" onClick=addredmi()>Add</button>
+            </footer>
+          </div>
+
+          <div class="card">
+           <div class="card-content is-center">
+              <div class="content is-center">
+                <img src="https://rukminim1.flixcart.com/image/312/312/kubk70w0/mobile/a/3/s/galaxy-m52-5g-sm-m526br-sm-m526br-samsung-original-imag7h2tmrsaugcz.jpeg?q=70" alt="">
+                Samsung Galaxy J5
+                <br>
+                Price: Rs 15000
+              </div>
+            </div>
+            <footer class="card-content">
+              <button class="button is-normal" onClick=addsamsung()>Add</button>
+            </footer>
+          </div>
+          
+          <div class="card">
+            <div class="card-content is-center">
+              <div class="content is-center">
+                <img src="https://rukminim1.flixcart.com/image/312/312/kkzrpu80/washing-machine-new/e/u/x/7-waj2416sin-bosch-original-imagy7rpaas92gaf.jpeg?q=70" alt="">
+                Washing Machine
+                <br>
+                Price: Rs 20000
+              </div>
+            </div>
+            <footer class="card-content">
+              <button class="button is-normal" onClick=addoppo()>Add</button>
+            </footer>
+          </div>
+
+    </div>
+    
+</body>
+</html>
