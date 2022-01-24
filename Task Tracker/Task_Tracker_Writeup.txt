@@ -1,0 +1,14 @@
+Task Tracker
+
+In this project, I have created a to-do list where employees can track there tasks assigned to them.
+
+1. This project was generated with [Angular CLI]
+
+2. First run `npm install' command and then`ng serve` command for a dev server. Navigate to `http://localhost:4200/`.
+   The app will automatically reload if you change any of the source files.
+
+3. We should run `ng generate component component-name` to generate a new component.
+
+4. And then run `ng build` to build the project.
+
+5. Run `ng test` to execute the unit tests via [Karma].
