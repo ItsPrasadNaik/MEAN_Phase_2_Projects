@@ -1,0 +1,49 @@
+<style>
+  table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  table.center{
+    margin-top: auto;
+    margin-right: auto;
+  }
+</style>
+<div *ngIf="main" style="background-color: rgb(64, 255, 191);text-align: center;"><hr>
+  <h1 style="color: rgb(0, 41, 9);"><b>Task Tracker</b></h1><hr>
+  <h3>Welcome To Task Tracker Angular App </h3>
+  <form #mainRef="ngForm" (ngSubmit)="save(mainRef)">
+    <div>
+      <b>EmpID &nbsp;&nbsp;&nbsp;:  &nbsp;</b><input type="text" name="EmpID" id="EmpID" ngModel required>
+    </div><br>
+    <div>
+      <b>Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </b> &nbsp;<input type="text" name="name" id="name" ngModel required>
+    </div><br>
+    <div>
+      <b>Task &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:  &nbsp;</b><input type="text" name="task" id="task" ngModel required>
+    </div><br>
+    <div>
+      <b>Deadline  &nbsp;: </b><input type="text" name="deadline" id="deadline" ngModel required>
+    </div><br>
+    <div>
+      <button type="submit" style="background-color: mediumturquoise;"><b>Save</b></button> &nbsp;
+      <button type="reset" style="background-color: rgb(255, 68, 68);"><b>Reset</b></button><br>
+    </div><br><hr>
+  </form>
+  <br>
+  <div>
+    <table border="3" class="center" style="color: rgb(0, 20, 5); background-color: rgb(255, 162, 181);">
+      <tr>
+        <th> &nbsp;EmpID &nbsp;</th>
+        <th> &nbsp;Name &nbsp;</th>
+        <th> &nbsp;Task &nbsp;</th>
+        <th> &nbsp;Deadline &nbsp;</th>
+      </tr>
+      <tr *ngFor="let i of taskArray">
+        <td>{{i.EmpID}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.task}}</td>
+        <td>{{i.deadline}}</td>
+      </tr>
+    </table>
+  </div><hr>
+</div>
